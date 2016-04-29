@@ -12,6 +12,7 @@
 		29FDCEC21CD34D17004B2752 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29FDCEC01CD34D17004B2752 /* Main.storyboard */; };
 		29FDCEC41CD34D17004B2752 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 29FDCEC31CD34D17004B2752 /* Assets.xcassets */; };
 		29FDCEC71CD34D17004B2752 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29FDCEC51CD34D17004B2752 /* LaunchScreen.storyboard */; };
+		29FDCECF1CD34FF6004B2752 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FDCECE1CD34FF6004B2752 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		29FDCEC31CD34D17004B2752 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		29FDCEC61CD34D17004B2752 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		29FDCEC81CD34D17004B2752 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29FDCECE1CD34FF6004B2752 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				29FDCEBC1CD34D17004B2752 /* AppDelegate.swift */,
 				29FDCEBE1CD34D17004B2752 /* ViewController.swift */,
 				29FDCEC01CD34D17004B2752 /* Main.storyboard */,
+				29FDCECE1CD34FF6004B2752 /* ResultViewController.swift */,
 				29FDCEC31CD34D17004B2752 /* Assets.xcassets */,
 				29FDCEC51CD34D17004B2752 /* LaunchScreen.storyboard */,
 				29FDCEC81CD34D17004B2752 /* Info.plist */,
@@ -96,6 +99,7 @@
 				TargetAttributes = {
 					29FDCEB81CD34D17004B2752 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = W7PG7SP597;
 					};
 				};
 			};
@@ -137,6 +141,7 @@
 			files = (
 				29FDCEBF1CD34D17004B2752 /* ViewController.swift in Sources */,
 				29FDCEBD1CD34D17004B2752 /* AppDelegate.swift in Sources */,
+				29FDCECF1CD34FF6004B2752 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,10 +254,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SecondKadaiApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.techacademy.shogo.okumura.SecondKadaiApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -260,10 +268,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SecondKadaiApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.techacademy.shogo.okumura.SecondKadaiApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
